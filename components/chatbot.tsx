@@ -34,7 +34,7 @@ export const ChatBot = () => {
                                 <Input name="query" />
                                 <Button
                                     type="submit"
-                                    className="bg-[#89CFF1] text-black font-semibold w-full"
+                                    className="bg-[#89CFF1] text-black font-semibold w-full hover:bg-[#003A6B] hover:text-white transition-colors"
                                 >
                                     Submit
                                 </Button>

@@ -62,6 +62,7 @@ export default function Component() {
     const response = await res.json();
     console.log(response);
     setSaving(false);
+    alert(`Report No: ${response.report.report.id}`);
   }
 
   return (

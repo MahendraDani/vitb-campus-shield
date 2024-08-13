@@ -10,15 +10,17 @@ export const Landing = () => {
                         <ShieldCheck width={56} height={56} /> Campus Shield
                     </p>
                 </Fade>
-                <Fade className="font-medium text-2xl">
+                <Fade className="font-medium text-xl">
                     Anti-Ragging Awareness
                 </Fade>
+
                 <Fade triggerOnce>
                     Ragging endangers student safety and well-being. This
                     website raises awareness, educates on anti-ragging laws, and
                     promotes a respectful, safe campus. Our goal is a secure and
                     inclusive environment for all students.
                 </Fade>
+
                 <Fade triggerOnce>
                     <div className="flex gap-5 mt-3 max-[850px]:flex-wrap">
                         <button className="bg-white text-black rounded-lg py-2 px-5 flex gap-2 items-center text-lg font-medium w-fit hover:bg-transparent hover:text-white hover:font-semibold border-4 border-transparent hover:border-white transition-colors">

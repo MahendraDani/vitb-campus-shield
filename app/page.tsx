@@ -1,5 +1,7 @@
 "use client";
 import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
+import { FileComplaint } from "@/components/file-complaint";
 import { ChatBot } from "@/components/chatbot";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -9,8 +11,7 @@ import { Support } from "@/components/support";
 
 export default function Home() {
   return (
-    <main className="absolute flex min-h-screen flex-col items-center justify-between pt-16">
-      <ChatBot />
+    <main className="flex min-h-screen flex-col items-center justify-between pt-16">
       <Header />
       <Landing />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

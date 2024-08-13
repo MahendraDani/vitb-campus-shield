@@ -24,18 +24,31 @@ export const ChatBot = () => {
     return (
         <div className="fixed right-4 bottom-4 z-[10]">
             {show ? (
-                <div className="w-[28rem] h-[36rem] bg-white z-10 rounded-sm p-4">
+                <div className="w-[28rem] h-[36rem] bg-white z-10 rounded-sm p-4 flex flex-col gap-4 border-2 border-black">
                     <div>
-                        <label>Ask any questions to AI?</label>
+                        <label className="font-bold text-xl">
+                            Ask any questions to AI?
+                        </label>
                         <form onSubmit={handleChat}>
-                            <fieldset>
+                            <fieldset className="flex flex-col gap-3 mt-3">
                                 <Input name="query" />
-                                <Button type="submit">Submit</Button>
+                                <Button
+                                    type="submit"
+                                    className="bg-[#89CFF1] text-black font-semibold w-full"
+                                >
+                                    Submit
+                                </Button>
                             </fieldset>
                         </form>
                     </div>
                     <div>{aiResponse}</div>
-                    <Button onClick={() => setShow(false)}>Close</Button>
+                    <Button
+                        className="font-semibold w-full"
+                        variant={"destructive"}
+                        onClick={() => setShow(false)}
+                    >
+                        Close
+                    </Button>
                 </div>
             ) : (
                 <button

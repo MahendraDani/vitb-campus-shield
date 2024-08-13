@@ -1,4 +1,5 @@
 import { Scale, ShieldCheck, TriangleAlert } from "lucide-react";
+import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
 export const Landing = () => {
@@ -27,10 +28,13 @@ export const Landing = () => {
                             <Scale width={26} height={26} />
                             Know Your Rights
                         </button>
-                        <button className="bg-red-600 rounded-lg py-2 px-5 flex gap-2 items-center text-lg font-medium w-fit hover:bg-white hover:text-red-600 hover:font-semibold transition-colors">
+                        <Link
+                            href={"/file-a-complaint"}
+                            className="bg-red-600 rounded-lg py-2 px-5 flex gap-2 items-center text-lg font-medium w-fit hover:bg-white hover:text-red-600 hover:font-semibold transition-colors"
+                        >
                             <TriangleAlert width={26} height={26} />
                             Report Ragging
-                        </button>
+                        </Link>
                     </div>
                 </Fade>
             </div>

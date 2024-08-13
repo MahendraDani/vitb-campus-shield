@@ -1,5 +1,7 @@
 "use client";
 import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
+import { FileComplaint } from "@/components/file-complaint";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Landing } from "@/components/landing";
@@ -19,8 +21,17 @@ export default function Home() {
                 ></path>
             </svg>
             <About />
+            <FileComplaint />
             <Laws />
             <Support />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#003A6B"
+                    fill-opacity="1"
+                    d="M0,96L40,117.3C80,139,160,181,240,170.7C320,160,400,96,480,96C560,96,640,160,720,208C800,256,880,288,960,256C1040,224,1120,128,1200,90.7C1280,53,1360,75,1400,85.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                ></path>
+            </svg>
+            <Contact />
             <Footer />
         </main>
     );

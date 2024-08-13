@@ -29,7 +29,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col items-center gap-2 mt-4">
-                <span>made with 💛 by coderKrysio</span>
+                <span>made with 💛 by team omega</span>
                 <span>© All rights reversed {new Date().getFullYear()}</span>
             </div>
         </footer>
